@@ -10,13 +10,15 @@ class App extends Component {
 
   state = {
     fighters,
+    score = 0
 
   }
 
   shuffle = () => {
     var fighters = this.state.fighters
    
-
+    //create an empty array to push the ids.  use an if an else to check for an id, else reset score to 0 and clear array
+    
     //run through the fighters 
     
       for (let i = fighters.length - 1; i > 0; i--) {
